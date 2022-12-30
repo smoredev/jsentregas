@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulador de Cotizaciones</title>
+</head>
+<body class="w3-light-grey">
+    <div class="w3-content" style="max-width:1532px;">
+        <p>Actualizado: 29-12-2022</p>
+        <h3>OFERTA ENERO 2023</h3>
+        <select name="telcos" id="values">
+        <optgroup label="MiTelco">
+            <option value="per50">50% - ESTANDAR</option>
+            <option value="per60">60% - ESPECIAL X TODO ENERO</option>   
+            <option value="per70">70% - ESPECIAL</option>
+        <optgroup label="Novastar">
+            <option value="movi80">80% - ESTANDAR</option>
+            <option value="movi85">85% - ESPECIAL X TODO ENERO</option>      
+            <option value="movi90">90% - ESPECIAL</option>
+        </select>
+        <div class="w3-container w3-margin-top" id="rooms">
+        <label id="titulo"></label>
+        </div>
+        <div class="w3-row-padding">
+        <div class="w3-col m3">
+            <label>
+            <i class="fa fa-bars"></i> Plan </label>
+            <input class="w3-input w3-border" type="text" id="i1" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i2" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i3" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i4" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i5" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i6" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i7" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="i8" disabled="disabled">
+        </div>
+        <div class="w3-col m2">
+            <label>
+            <i class="fa fa-usd"></i> Precio s/desc </label>
+            <input class="w3-input w3-border" type="text" id="sd1" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd2" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd3" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd4" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd5" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd6" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd7" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="sd8" disabled="disabled">
+        </div>
+        <div class="w3-col m2">
+            <label>
+            <i class="fa fa-usd"></i> Precio c/desc </label>
+            <input class="w3-input w3-border" type="text" id="cd1" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd2" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd3" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd4" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd5" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd6" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd7" disabled="disabled">
+            <input class="w3-input w3-border" type="text" id="cd8" disabled="disabled">
+        </div>
+        <div class="w3-col m2">
+            <label>
+            <i class="fa fa-mobile"></i> Cant Lineas </label>
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q1">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q2">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q3">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q4">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q5">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q6">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q7">
+            <input class="w3-input w3-border" type="number" min="0" placeholder="0" id="q8">
+            <input class="w3-input w3-border" type="number" placeholder="Total s/imp" disabled="disabled">
+            <input class="w3-input w3-border" type="number" placeholder="Total c/imp (%33)" disabled="disabled">
+        </div>
+        <div class="w3-col m2">
+            <label>
+            <i class="fa fa-usd"></i> Total </label>
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r1" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r2" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r3" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r4" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r5" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r6" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r7" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="r8" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="rsub" disabled="disabled">
+            <input class="w3-input w3-border" type="text" placeholder="0" id="rtot" disabled="disabled">
+        </div>
+        </div>
+</body>
+<script src="app.js"></script>
+</html>
