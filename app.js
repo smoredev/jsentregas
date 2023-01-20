@@ -3,14 +3,27 @@ setInterval(() => {
     setEverything()
   }, 200);
 
-  var plan1 = "1GB"
-  var plan2 = "2GB"
-  var plan3 = "3GB"
-  var plan4 = "5GB + 10GB DE REGALO"
-  var plan5 = "8GB + 10GB DE REGALO"
-  var plan6 = "15GB + 10GB DE REGALO"
-  var plan7 = "25GB + 10GB DE REGALO"
-  var plan8 = "40GB"
+  //Esto es innecesario hacerlo asi pero para mostrar que use un objeto por lo menos
+  const planes = [
+    {tipo:"1GB"},
+    {tipo:"2GB"},
+    {tipo:"3GB"},
+    {tipo:"5GB + 10GB DE REGALO"},
+    {tipo:"8GB + 10GB DE REGALO"},
+    {tipo:"15GB + 10GB DE REGALO"},
+    {tipo:"25GB + 10GB DE REGALO"},
+    {tipo:"40GB"}
+  ]
+
+  var plan1 = planes[0].tipo
+  var plan2 = planes[1].tipo
+  var plan3 = planes[2].tipo
+  var plan4 = planes[3].tipo
+  var plan5 = planes[4].tipo
+  var plan6 = planes[5].tipo
+  var plan7 = planes[6].tipo
+  var plan8 = planes[7].tipo
+  
   var psdesc1 = 100.00
   var psdesc2 = 200.00
   var psdesc3 = 300.00
@@ -142,8 +155,6 @@ setInterval(() => {
     document.getElementById("rsub").value = "$" + (Math.round((r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8) * 100) / 100).toFixed(2);
     document.getElementById("rtot").value = "$" + (Math.round(((r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8) * 1.33) * 100) / 100).toFixed(2);
    
-
-    // let converval = document.getElementById("convergencia")
     let cant = parseInt(q1)
     let cant2 = parseInt(q2)
     let cant3 = parseInt(q3)
